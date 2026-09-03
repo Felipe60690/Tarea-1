@@ -23,9 +23,38 @@
   <main>
 
     <!-- Aquí irá el formulario en la clase 4 -->
-    <section id="nueva">
-      <h2>Agregar una tarea</h2>
-      <p>Pronto aquí habrá un formulario para crear tareas.</p>
+    
+      <section id="nueva">
+  <h2>Agregar una tarea</h2>
+
+  <form>
+    <label for="titulo">Título:</label>
+    
+    <input type="text" id="titulo" name="titulo" required>
+<br><br
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion"></textarea>
+
+    <label for="categoria">Categoría:</label>
+    <select id="categoria" name="categoria">
+      <option value="estudio">Estudio</option>
+      <option value="casa">Casa</option>
+      <option value="deporte">Deporte</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <p>Estado:</p>
+    <input type="radio" id="pendiente" name="estado" value="pendiente">
+    <label for="pendiente">Pendiente</label>
+    <input type="radio" id="completada" name="estado" value="completada">
+    <label for="completada">Completada</label>
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha">
+
+    <button type="submit">Agregar tarea</button>
+  </form>
+
     </section>
 
     <!-- Aquí se mostrarán las tareas con JavaScript -->
@@ -49,7 +78,7 @@
   </main>
 
   <footer>
-    <p>Proyecto de [tu nombre] · Herramientas de Programación I</p>
+    <p>Proyecto de Felipe Martinez y Juan Cardona · Herramientas de Programación I</p>
   </footer>
 
 </body>
